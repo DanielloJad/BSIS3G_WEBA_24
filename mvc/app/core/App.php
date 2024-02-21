@@ -44,7 +44,7 @@ class App
     {
         if (isset($_GET['url']))
         {
-            $url explode('/', trim($_GET['url'], '/'));
+            $url = explode('/', trim($_GET['url'], '/'));
             return $url;
         }
     }
