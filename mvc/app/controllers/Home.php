@@ -4,8 +4,8 @@ class Home extends Controller
 {
     public function Index()
     {
-        $model = new Model();
-        $data = $model->findAll();
+        $user = new User();
+        $data = $user->findAll();
         show($data);
 
         $this->view('home');
